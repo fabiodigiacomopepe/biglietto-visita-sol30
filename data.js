@@ -8,7 +8,7 @@ const profileData = {
     "notice": {
         "active": true,
         "title": "In Ferie:",
-        "text": "Sarò fuori ufficio dal 17 agosto al 31 agosto compreso. Per assistenza rivolgersi al team di supporto."
+        "text": "Sarò fuori ufficio dal 17 agosto al 31 agosto compreso. Per assistenza, è sempre possibile aprire un ticket su 4ME o inviare una messaggio alla mail di supporto"
     },
     "contacts": {
         "phone": "+39 331 640 8516",
