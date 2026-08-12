@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profilo IT</title>
+    <title>Fabio Di Giacomo Pepe - Solutions30 Italia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -542,17 +542,13 @@
         <div class="footer" id="footer-text"></div>
     </div>
 
-    <script>
-        let profileData = {};
+    <!-- Importa i dati dal file JS locale -->
+    <script src="data.js"></script>
 
-        async function initPage() {
-            try {
-                const response = await fetch('.data.json');
-                profileData = await response.json();
-                renderPage(profileData);
-            } catch (error) {
-                console.error('Errore durante il caricamento dei dati:', error);
-            }
+    <script>
+        function initPage() {
+            // Usa direttamente la variabile caricata da data.js
+            renderPage(profileData);
         }
 
         function renderPage(data) {
