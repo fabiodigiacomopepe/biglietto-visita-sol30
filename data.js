@@ -14,7 +14,7 @@ const profileData = {
         "phone": "+39 331 640 8516",
         "phoneRaw": "+393316408516",
         "email": "fabio.digiacomo@solutions30.com",
-        "hours": "Lunedì - Venerdì | 09:00 - 13:00 | 14:00 - 18:00",
+        "hours": "Lunedì - Venerdì\n09:00 - 13:00 | 14:00 - 18:00",
         "address": "Via Fabio Filzi 15 | Cormano (MI), 20032 | Italia",
         "addressMapUrl": "https://maps.google.com/?q=Via+Fabio+Filzi+15,+Cormano+(MI),+20032,+Italia"
     },
