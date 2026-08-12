@@ -16,6 +16,7 @@
             --accent-blue: #2563eb;
             --accent-blue-hover: #1d4ed8;
             --accent-cyan: #06b6d4;
+            --accent-amber: #f59e0b;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
             --badge-bg: rgba(37, 99, 235, 0.15);
@@ -56,7 +57,7 @@
         /* Profile Header */
         .profile-header {
             text-align: center;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 
         .avatar {
@@ -101,6 +102,33 @@
             font-size: 0.875rem;
             font-weight: 600;
             border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+
+        /* Notice Banner / OOO */
+        .notice-banner {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(245, 158, 11, 0.12);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 14px;
+            padding: 12px 16px;
+            margin-bottom: 24px;
+            font-size: 0.875rem;
+            color: #fef3c7;
+        }
+
+        .notice-icon {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .notice-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--accent-amber);
         }
 
         /* Quick Action Buttons */
@@ -380,7 +408,7 @@
     <div class="container">
         <!-- Profile Header -->
         <div class="profile-header">
-            <div class="avatar">FD</div>
+            <div class="avatar">FDGP</div>
             <h1 class="name">Fabio Di Giacomo Pepe</h1>
             <div class="role">IT Manager</div>
             <div class="company-badge">
@@ -388,6 +416,20 @@
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
                 Solutions30 Italia
+            </div>
+        </div>
+
+        <!-- Ferie / Out of Office Notice -->
+        <div class="notice-banner">
+            <div class="notice-icon">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                </svg>
+            </div>
+            <div>
+                <strong>In Ferie:</strong> Sarò fuori ufficio dal <strong>17 agosto al 31 agosto</strong> compreso. Per
+                assistenza rivolgersi al team di supporto.
             </div>
         </div>
 
@@ -422,6 +464,27 @@
             </button>
         </div>
 
+        <!-- Assistance / Support Section -->
+        <div class="support-card">
+            <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-cyan)">
+                    <path
+                        d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z" />
+                </svg>
+                Richiedi Assistenza IT
+            </h3>
+            <p>Per qualsiasi richiesta di supporto tecnico, apri un ticket sul portale 4ME oppure invia una mail
+                al team di supporto.</p>
+            <div class="support-actions">
+                <a href="https://solutions30.4me.com/self-service" target="_blank" class="support-btn">
+                    Apri Ticket su 4ME
+                </a>
+                <a href="mailto:it-italia@solutions30.com" class="support-btn secondary">
+                    Scrivi alla mail di supporto
+                </a>
+            </div>
+        </div>
+
         <!-- Contact Info List -->
         <div class="section-title">Informazioni di Contatto</div>
         <div class="info-list">
@@ -451,6 +514,19 @@
                 </div>
             </a>
 
+            <div class="info-item">
+                <div class="info-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                    </svg>
+                </div>
+                <div class="info-content">
+                    <span class="info-label">Orari di Lavoro</span>
+                    <span class="info-value">Lunedì - Venerdì | 09:00 - 18:00</span>
+                </div>
+            </div>
+
             <a href="https://maps.google.com/?q=Via+Fabio+Filzi+15,+Cormano+(MI),+20032,+Italia" target="_blank"
                 class="info-item">
                 <div class="info-icon">
@@ -466,29 +542,8 @@
             </a>
         </div>
 
-        <!-- Assistance / Support Section -->
-        <div class="support-card">
-            <h3>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-cyan)">
-                    <path
-                        d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z" />
-                </svg>
-                Richiedi Assistenza IT
-            </h3>
-            <p>Per qualsiasi richiesta di supporto tecnico, apri un ticket sul portale 4ME oppure invia una mail
-                al team di supporto.</p>
-            <div class="support-actions">
-                <a href="https://solutions30.4me.com/self-service" target="_blank" class="support-btn">
-                    Apri Ticket su 4ME
-                </a>
-                <a href="mailto:it-italia@solutions30.com" class="support-btn secondary">
-                    Scrivi a IT Italia
-                </a>
-            </div>
-        </div>
-
         <!-- Team Section -->
-        <div class="section-title">Team di Supporto IT</div>
+        <div class="section-title">Team IT (chi risponde a 4ME/Mail di supporto)</div>
         <div class="team-grid">
             <div class="team-member">
                 <div class="member-details">
