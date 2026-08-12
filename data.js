@@ -1,4 +1,4 @@
-{
+const profileData = {
     "profile": {
         "initials": "FDGP",
         "name": "Fabio Di Giacomo Pepe",
@@ -39,4 +39,4 @@
             "email": "elisa.miceli@solutions30.com"
         }
     ]
-}
+};
