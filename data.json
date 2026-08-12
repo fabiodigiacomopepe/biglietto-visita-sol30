@@ -1,0 +1,42 @@
+{
+    "profile": {
+        "initials": "FDGP",
+        "name": "Fabio Di Giacomo Pepe",
+        "role": "IT Manager",
+        "company": "Solutions30 Italia"
+    },
+    "notice": {
+        "active": true,
+        "title": "In Ferie:",
+        "text": "Sarò fuori ufficio dal 17 agosto al 31 agosto compreso. Per assistenza rivolgersi al team di supporto."
+    },
+    "contacts": {
+        "phone": "+39 331 640 8516",
+        "phoneRaw": "+393316408516",
+        "email": "fabio.digiacomo@solutions30.com",
+        "hours": "Lunedì - Venerdì | 09:00 - 18:00",
+        "address": "Via Fabio Filzi 15 | Cormano (MI), 20032 | Italia",
+        "addressMapUrl": "https://maps.google.com/?q=Via+Fabio+Filzi+15,+Cormano+(MI),+20032,+Italia"
+    },
+    "support": {
+        "portalUrl": "https://solutions30.4me.com/self-service",
+        "supportEmail": "it-italia@solutions30.com"
+    },
+    "team": [
+        {
+            "name": "Fabio Di Giacomo Pepe",
+            "role": "IT Manager",
+            "email": "fabio.digiacomo@solutions30.com"
+        },
+        {
+            "name": "Salvatore Castro",
+            "role": "Help-Desk",
+            "email": "salvatore.castro@solutions30.com"
+        },
+        {
+            "name": "Elisa Miceli",
+            "role": "Help-Desk",
+            "email": "elisa.miceli@solutions30.com"
+        }
+    ]
+}
